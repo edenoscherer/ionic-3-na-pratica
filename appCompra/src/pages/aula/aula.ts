@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AulaPage } from '../aula/aula';
+
 /**
- * Generated class for the DetalhePage page.
+ * Generated class for the AulaPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,24 +10,16 @@ import { AulaPage } from '../aula/aula';
 
 @IonicPage()
 @Component({
-  selector: 'page-detalhe',
-  templateUrl: 'detalhe.html',
+  selector: 'page-aula',
+  templateUrl: 'aula.html',
 })
-export class DetalhePage {
-
-  item = {};
+export class AulaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.item = this.navParams.get('dados');
-
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DetalhePage');
-  }
-
-  abreAula(item){
-    this.navCtrl.push(AulaPage,{dados:item});
+    console.log('ionViewDidLoad AulaPage');
   }
 
 }
